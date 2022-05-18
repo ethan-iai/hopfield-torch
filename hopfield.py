@@ -98,7 +98,6 @@ class HopfieldNet(nn.Module):
             eps (float): Defaults to 1e-6.
 
         """
-        from torchvision.utils import save_image
         e = self._energy(x)
 
         for _ in range(self.max_iter):
